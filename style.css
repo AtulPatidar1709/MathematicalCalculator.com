@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --primary-color:#f43f5e ;
+    --dark-color : lightgrey;
+
+}
+body {
+    background-color: var( --dark-color);
+    color : var(--primary-primary);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+hr{
+    margin: 2rem 0rem;
+}
+.container {
+    padding: 0rem 1rem;
+}
+    
+.container1 {
+        width: 50%; 
+         margin: auto;
+      }
+
+
+.container-center {
+    max-width: 700px;
+    margin: auto;
+}
+.quiz-form{
+    box-sizing: inherit;
+    
+}
+
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 2rem 0rem;
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.link-secondary {
+    color:var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem;
+    
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem ;
+}
+
+.navigation .nav-brand {
+    font-weight:bold;
+
+} 
+
+.navigation .nav-pills{
+    color: white;
+    text-align: right;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-active {
+     font-weight: bold;
+}
+
+.input,
+label{
+  display: block;
+}
+input{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    }
+#is-triangle-btn ,#hypotenous-btn, #submit-answer-btn {
+     margin-top : 1rem; 
+     display : block;
+    margin: auto;
+    background : transparent ;
+    color: var(--primary-color);
+    border-color : var(--dark-colorn);
+    border-width: medium;
+    padding : 0.5rem;
+    border-radius: 0.4rem;
+    
+  }
+
+#submit-answer-btn{
+      max-width: 80% ;
+      text-align: center;
+      padding-top: 0.5rem;
+      backdrop-filter:var(--primary-color);
+}
+#output {
+      text-align: center;
+      padding-top: 0.5rem;
+      backdrop-filter:var(--primary-color);
+  }
