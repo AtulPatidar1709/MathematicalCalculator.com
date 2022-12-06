@@ -91,7 +91,7 @@ input{
     width: 100%;
     margin-bottom: 0.5rem;
     }
-#is-triangle-btn ,#hypotenous-btn, #submit-answer-btn {
+#is-triangle-btn ,#hypotenous-btn, #submit-answer-btn, #triangle-btn {
      margin-top : 1rem; 
      display : block;
     margin: auto;

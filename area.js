@@ -1,19 +1,20 @@
 const sides = document.querySelectorAll(".side-input");
-const hypotenusBtn = document.querySelector('#hypotenous-btn');
-const outPutE1 =document.querySelector('#output');
+const trianglebtn = document.querySelector('#triangle-btn');
+const outPutE2 =document.querySelector('#output');
 
-function calculateSumOfSquare(a,b){
- const sumOfSquares = a*a + b*b ; 
-// console.log(sumOfSquare);
-return sumOfSquares;
+// calculate the semi-perimeter
+
+function calculateData(side1,side2,side3)
+{
+const sum = (side1 + side2 + side3) / 2;
+return sum;
+}
+//calculate the area
+function calculateAreaofTriangle(){
+  const sum = calculateData(Number(sides[0].value),Number(sides[1].value),Number(sides[2].value));
+  const areaValue = Math.sqrt(sum * (sum - Number(sides[0].value)) * (sum - Number(sides[1].value)) * (sum - Number(sides[2].value)));
+  console.log(areaValue);
+  outPutE2.innerText = "The Area of Triangle is " + areaValue.toFixed(2);
 }
 
-function calculateHypotenuse (){
- const sumOfSquares =  calculateSumOfSquare(Number(sides[0].value),Number(sides[1].value));
- const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
- console.log(lengthOfHypotenuse);
- outPutE1.innerText = "The Length of Hypotenuse " + lengthOfHypotenuse;
-}
-
-
-hypotenusBtn.addEventListener("click",calculateHypotenuse);
+trianglebtn.addEventListener("click",calculateAreaofTriangle);
